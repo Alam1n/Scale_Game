@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float airMultiplier = 0.4f;
     public float acceleration = 10f;
     public float deceleration = 10f;
+    public PlayerInputActions inputActions;
 
     [Header("Jumping")]
     public float jumpForce = 12f;
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpInput;
     private bool sprintInput;
     private bool crouchInput;
-    private PlayerInputActions inputActions;
+   
 
     // Movement
     private Vector3 moveDirection;
